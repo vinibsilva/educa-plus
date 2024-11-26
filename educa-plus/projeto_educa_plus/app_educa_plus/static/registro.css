@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(-368deg, #03001f, #02094e, #01073D, #030016);
+    background-attachment: fixed;
+    max-height: 100vh;
+}
+
+img {
+    width: 150px;
+    padding-top: 18px;
+    margin-bottom: 13px;
+}
+
+div {
+    width: 370px;
+    /* height: 447px; */
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 130px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #c5c5c5;
+    letter-spacing: 0.5px;
+}
+
+#sessao {
+    font-size: 10px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+}
+
+
+.input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 320px;
+    padding: 8px;
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #606060;
+}
+
+.input:focus {
+    border-color: #a0a0a0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(160, 160, 160, 0.5); 
+}
+
+#text {
+    border: 1px solid #b7b7b7;
+    margin-top: 18px;
+    width: 295px;
+    padding-left: 15px;
+    color: hsl(0, 0%, 38%);
+}
+
+#entrar {
+    background-image: linear-gradient(23deg, #01073D, #060074);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ebeaff;
+    font-weight: 550;
+    padding: 8px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+#esqueceu {
+    margin: auto;
+    color: #00376B;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#cadastro {
+    margin: auto;
+    color: #0068AD;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#tem-conta {
+    margin-top: 1px;
+    color: black;
+}
+
+.equipe {
+    font-size: 12px;
+    margin: 5px;
+    color: #0068ad;
+    text-align: center;
+}
+
+#sete {
+    color: #00a0da;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) { 
+    div {
+        margin-top: 50px; 
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) { 
+    div {
+        margin-top: 20px;
+        width: 95%;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 260px;
+}
+
+footer > a {
+    color: #59636E;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+#f1, #f2, #f3, #f4, #f5, #f6 {
+    margin: 20px;
+    font-weight: 600;
+}
+
+#entrar:hover {
+    background-image: linear-gradient(23deg, #000536, #09025e);
+}
+
+#l {
+    text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+header > a > svg {
+    margin-left:10px;
+    margin-top: 6.5px;
+}
+
+
+header > img {
+    margin-left: 18%;
+    margin-right: 46%;
+}
+
+header > p {
+    color: #8193B2;
+    font-size: 17px;
+}
+
+header > p > a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center
+}
+
+div {
+    height: 400px;
+    width: 370px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.equipe {        
+font-family: "Source Code Pro";
+letter-spacing: 0px;
+
+}
+
+.input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#profissao {
+    font-weight: 550;
+}
+
+#esqueceu-senha {
+    margin-top: 20px;
+    
+}
+
+#tem-conta {
+    margin-top: -5px;
+    font-size: 1px;
+}
+
+.sessao {
+    
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 24px; 
+    letter-spacing: 0.5px;      
+      
+}
+
+#registro-box {
+    margin: auto;
+}
+
+.insira {
+    color: #0068AD;
+    font-weight: 600;
+    text-align: start;
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.input {
+    margin: 0px;
+}
+
+#criar {
+    margin-top: 20px;
+}
+
+#registro-box > p {
+    font-size: 16px;
+}
+
+#registro-box > #tem-conta {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#registro-box .cadastro {
+    font-size: 12px;
+}
+
+#registro-box .sessao {
+    margin-top: 152px;
+    margin-bottom: 20px;
+}
+
+#bem-vindo {
+    padding-top: 20px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.insira {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.entre {
+    font-weight: 600;
+}
+
+.icon {
+fill: #e6e9ff; 
+}
+
+.icon path {
+stroke: #e6e9ff; 
+}
+
+#entre-id {
+    color: #e6e9ff;
+}
+
+#tent {
+    margin-left: 20px;
+}
+
+.caixinha {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+#exibir-senha {
+background: none;
+margin: 0px;
+height: 0px;
+width: 0px;
+
+}
+
+#text-senha {
+width: 305px;
+margin-top: 18px;
+margin-left: 23px;
+}
+
+.teste {
+
+align-items: center;
+margin-top: 10px;
+display: flex;
+height: 30px;
+width: 330px;
+}
+
+.caixinha {
+margin-left: 30px;
+}
+
+#exibir {
+font-size: 14px;
+margin-left: 3px;
+color: black;
+margin-top: 12px;
+height: 18px;
+letter-spacing: 0px;
+
+}
+
+#teste-baixo {
+margin-top: 0px;
+text-align: justify;
+}
+
+#caixinha-baixo {
+width: 36px;
+height: 36px;
+}
+
+.icon- {
+padding-right: 100px;
+}
+
+.setinha-voltar {
+text-decoration: none;
+color: black;
+}
+
+.sessa {
+display: flex;
+align-items: center; /* Alinha verticalmente */
+justify-content: center; /* Centraliza horizontalmente */
+text-align: center; /* Garante que o texto fique centralizado */
+}
+.setinha-voltar:hover {
+color: #0068AD;
+}

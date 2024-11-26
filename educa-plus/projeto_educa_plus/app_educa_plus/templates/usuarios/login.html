@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaPlus</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="stylesheet" href="{% static 'mq.css' %}">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="{% static 'logo_completa.educaplus.png' %}" alt="logo-educa-plus">
+        <p class="sessao">Entre para iniciar sua sessao</p>
+        <form action="" method="post" autocomplete="off">
+
+            <select title="login"   class="input" id="profissao" name="opcoes">
+              <option value="opcao1">Estudante</option>
+              <option value="opcao2">Professor</option>
+              <option value="opcao3">Empresa</option>
+            </select>
+            <input type="text" class="input" id="text" name="nome" placeholder="E-mail">
+            <input type="password" class="input" id="o" name="senha" placeholder="Senha">
+        </form>
+        <a id="l" href="meu-painel.html">
+            <p class="sessao" id="entrar">Entrar</p>
+        </a>
+            <p id="esqueceu-senha"><a href="" id="esqueceu">Esqueceu a senha?</a></p>
+            <p id="tem-conta">Não tem uma conta ? <a href="{% url 'registro'%}" id="cadastro">Cadastre-se</a></p>
+        </span>
+    </div>
+    <span id="desenvolvido">
+        <p class="equipe" id="equipe">Desenvolvido por <a class="equipe" href="#"id="sete">©Equipe 7</a></p>
+    </span>
+</body>
+</html>
