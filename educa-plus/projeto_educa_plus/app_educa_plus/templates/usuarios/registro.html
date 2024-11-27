@@ -27,10 +27,11 @@
             </a>
           </a>Bem vindo ao EducaPlus!<br>
             Vamos comecar sua aventura</p>
-        <form>
-            
+        <form action="{% url 'registrar' %}" method='POST'>
+            <p class="insira">Insira seu Nome Completo*</p>
+            <input type="text" class="input" id="text" name="nome-usuario" placeholder="Nome">
             <p class="insira">Insira seu email *</p>
-            <input type="text" class="input" id="text" name="nome" placeholder="E-mail">
+            <input type="text" class="input" id="text" name="email" placeholder="E-mail">
             <p id="criar" class="insira">Criar uma senha *</p>
             <div id="exibir-senha">
                 <input type="password" class="input" id="text-senha" name="senha" placeholder="Senha">
@@ -45,10 +46,8 @@
                 </label>
             </div>
             </span>
+            <button type='submit' class="sessao" id="entrar">Finalizar cadastro</button>
         </form>
-        <a id="l" href="{% url 'login' %}">
-            <p class="sessao" id="entrar">Finalizar cadastro</p>
-        </a>
         
         </div>
     </div>

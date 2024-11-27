@@ -21,5 +21,8 @@ from app_educa_plus import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',views.login, name='login'),
-    path('registro/', views.registro, name='registro')
+    path('logar/',views.login_usuario, name='logar'),
+    path('registro/', views.registro, name='registro'),
+    path('registrar/', views.cadastrar_usuario, name='registrar'),
+    path('painel/', views.painel,  name='painel')
 ]

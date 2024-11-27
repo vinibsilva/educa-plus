@@ -15,19 +15,19 @@
     <div id="container">
         <img src="{% static 'logo_completa.educaplus.png' %}" alt="logo-educa-plus">
         <p class="sessao">Entre para iniciar sua sessao</p>
-        <form action="" method="post" autocomplete="off">
-
+        <form action="{% url 'logar' %}" method="POST" autocomplete="off">
+            {% csrf_token %}
             <select title="login"   class="input" id="profissao" name="opcoes">
               <option value="opcao1">Estudante</option>
               <option value="opcao2">Professor</option>
               <option value="opcao3">Empresa</option>
             </select>
-            <input type="text" class="input" id="text" name="nome" placeholder="E-mail">
+            <input type="text" class="input" id="text" name="email" placeholder="E-mail">
             <input type="password" class="input" id="o" name="senha" placeholder="Senha">
+            <button type='submit'class="sessao" id="entrar">Entrar</button>
         </form>
-        <a id="l" href="meu-painel.html">
-            <p class="sessao" id="entrar">Entrar</p>
-        </a>
+            
+        
             <p id="esqueceu-senha"><a href="" id="esqueceu">Esqueceu a senha?</a></p>
             <p id="tem-conta">Não tem uma conta ? <a href="{% url 'registro'%}" id="cadastro">Cadastre-se</a></p>
         </span>
