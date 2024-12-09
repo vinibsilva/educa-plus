@@ -1,0 +1,380 @@
+h2 {
+    color: white;
+    font-weight: 400;
+}
+
+body {
+    background-color: #101423;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding-bottom: 10px;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header > img {
+    height: 70px;
+}
+
+.navegador {
+    margin: 20px;
+    
+}
+
+header > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#meu-painel {
+    color: #0068AD;
+    margin: 0px;
+    width: 150px;
+    margin: 20px;    
+}
+
+#header-icon-bell {
+    margin-left: 53%;
+}
+
+#header-icon {
+    margin-left: 10px;
+    width: 60px;
+}
+
+header > a > .icon path {
+    margin-left: 100px;
+    align-items: center;
+}
+
+div {
+    background-color: #2832553d;
+    width: 855px;
+    height: 570px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#informacoes {
+    padding: 30px;   
+    height: 580px;
+}
+
+#primeiras-informacoes {
+    display: flex;
+    height: 130px;
+    margin: 0px;
+    background: none;
+}
+
+div > p > .icon path {
+    fill: white;
+}
+
+#primeiras-informacoes > p {
+    color: white;
+}
+
+#name {
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 22px;
+    font-weight: bolder;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#segundas-informacoes {
+    display: flex;
+    height: 50px;
+    width: 267px;
+}
+
+.icon {
+    fill: white;
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+#meu-painel-2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+#editar-perfil {
+    background-color: #0068AD;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+}
+#editar-perfil-char {
+    color: white;
+    font-size: 13px;;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#pencil {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+#educabasic {
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #7B7B7B;
+    margin-top: 0px;
+}
+
+#name-plano {
+    color: white;
+    width: 290px;
+}
+
+#terceiras-informacoes {
+    height: 50px;
+    width: 267px;
+    display: flex;
+}
+
+.informacoes-secundarias {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+#quartas-informacoes {
+    height: 50px;
+    width: 300px;
+    display: flex;
+}
+
+#conquistas {
+    width: 100px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 2px 7px;
+    margin: 0px;
+
+}
+
+
+.butao {
+    color: rgb(255, 255, 255);
+    background-color: #545c75;
+
+    padding: 5px 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao-final {
+    background-color: #101423;
+    border-radius: 8px;
+    width: 190px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+
+.no-bg {
+    background-color: transparent;
+    height: 44px;
+}
+
+#mais {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+#ultimo {
+    height: 1px;
+}
+
+.linha-cima {
+    color: white;
+    font-size: 14px;
+}
+
+.linha-baixo {
+    color: #7B7B7B;
+    font-size: 13px;
+}
+
+#segunda-fileira,#ultimo {
+    margin-top: 13px;
+}
+
+#botao-hoje {
+    background-color: #0068AD;
+    color: white;
+    border: none;
+    padding: 5px 7px;
+}
+
+#div2 {
+    display: flex;
+    margin-top: 35px;
+    width: 920px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.botao-final:hover {
+    border: 2px solid #545C75; 
+    border-radius: 8px; 
+    padding: 2px; 
+}
+
+
+
+#conquistas2,#cursos {
+    width: 190px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    background-color: #545c75;
+    color: white;
+    
+}
+
+#conquistas2 {
+    background-color: #0068AD;
+    color: white;
+}
+#num   {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 100%;
+    font-size: 75%;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(45, 45, 55);
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.botoes {
+    text-align: center;
+}
+
+#curso-pontuacao {
+    
+    width: 110px;
+    height: 110px;
+    margin: auto;
+}
+
+#botao-baixo {
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+#conexao {  
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#primeira-coluna {
+    
+    flex-flow: wrap;
+    margin-top: 50px;
+    display: flex;
+    background: none;
+    height: 180px;    
+}
+
+#segunda-coluna {
+    margin-top: 50px;
+    flex-flow: wrap;
+    display: flex;
+    background: none;
+    height: 180px;    
+}
+
+#footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #2B3035;
+    display: flex;
+}
+
+#conteudo-footer {
+    height: 300px;
+    width: 800px;
+}
+
+#footer-icon {
+    height: 50px;
+    width: 50px;
+}
+
+img {
+    margin-left: 20px;
+}
+
+#segunda-fileira {
+    margin-top: 10px;
+}
+
+#ultimo {
+    margin-top: 10px;
+}
+
+#arrow-bottom {
+    background: none;
+    color: white;
+    border: none;
+    width: 17px;
+    margin: 0px;
+}
+
+nav {
+    height: 160px;
+    margin-top: 30px;
+}
+
+

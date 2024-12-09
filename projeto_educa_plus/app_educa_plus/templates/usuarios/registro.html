@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se • EducaPlus</title>
+    <link rel="icon" href="{% static 'imagens/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'imagens/logo_completa.educaplus.png' %}" alt="logo-educa-plus">
+        <p class="entre">Ja tem uma conta ? <a id="entre-id" class="entre" href="{% url 'login' %}">Entre</a></p>
+        <a href="{% url 'login' %}"><svg href="{% url 'login' %}" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            <path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></a>
+    </header>
+    <div>
+        <div id="registro-box">
+        <p id="bem-vindo" class="sessa">
+            <a class="setinha-voltar" href="{% url 'login' %}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="setinha-voltar" viewBox="0 0 16 16" style="position: relative; left: -40px;">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                  </svg>
+            </a>
+          </a>Bem vindo ao EducaPlus!<br>
+            Vamos comecar sua aventura</p>
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                        {{ message }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form action="{% url 'registro'%}" method="post">
+            {% csrf_token %}
+            <p class="insira">Insira seu nome completo *</p>
+            <input type="text" class="input" id="text" name="nome" placeholder="Nome">
+            <p class="insira">Insira seu email *</p>
+            <input type="text" class="input" id="text" name="email" placeholder="E-mail">
+            <p id="criar" class="insira">Insira sua data de nascimento *</p>
+            <input id="text" class="input" type="date" id="text" name="data-nascimento" required>
+            <p id="criar" class="insira">Criar uma senha *</p>
+            <input type="password" class="input" id="text" name="senha" placeholder="Senha">
+            <button type="submit" class="insira" id="entrar">Registrar</button>
+        </form>
+        
+        </div>
+    </div>
+    <footer>
+        <a id="f1" href="">EducaPlus, Inc.</a>
+        <a id="f2" href="">Termos</a>
+        <a id="f3" href="">Privacidade</a>
+        <a id="f4" href="">Documentacao</a>
+        <a id="f5" href="">Gerenciar cookies</a>
+        <a id="f6" href="">Contato para empresas</a>
+    </footer>
+</body>
+</html>

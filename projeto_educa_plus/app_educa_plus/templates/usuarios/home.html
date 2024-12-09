@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="{% static 'imagens/favicon.ico' %}" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaPlus</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header class="logo">
+        <img src="{% static 'imagens/logo_completa.educaplus.png' %}" alt="logo-educa-plus" id="logo-educa">    </header>
+    <main class="content">
+      <h2>Bem-vindo ao EducaPlus!</h2>
+      <p>Uma plataforma revolucionária de aprendizado para você alcançar seus objetivos.</p>
+      <a href="{% url 'login' %}" class="cta-button">Comece agora</a>
+    </main>
+    <footer>
+      <p>&copy; 2024 EducaPlus. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>

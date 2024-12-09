@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaPlus</title>
+    <link rel="icon" href="{% static 'imagens/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq.css' %}">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="{% static 'imagens/logo_completa.educaplus.png' %}" alt="logo-educa-plus">
+        <p class="sessao">Entre para iniciar sua sessao</p>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                        {{ message }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form action="{% url 'login'%}" method="post" autocomplete="off">
+            {% csrf_token %}
+            <select class="input" id="profissao" name="opcoes">
+              <option value="opcao1">Estudante</option>
+            </select>
+            <input type="text" class="input" id="text" name="email" placeholder="E-mail">
+            <input type="password" class="input" id="text" name="senha" placeholder="Senha">
+            <button class="sessao" id="entrar">Entrar</button>
+        </form>
+
+            <p id="esqueceu-senha"><a href="" id="esqueceu">Esqueceu a senha?</a></p>
+            <p id="tem-conta">Não tem uma conta ? <a href="{% url 'registro' %}" id="cadastro">Cadastre-se</a></p>
+        </span>
+    </div>
+    
+</body>
+</html>

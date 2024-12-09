@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'imagens/favicon.ico' %}" type="image/x-icon">
+    <title>Cursos • EducaPlus</title>
+    <link rel="stylesheet" href="{% static 'css/cursos.css' %}">
+</head>
+<body>
+    <header>    
+        <img src="{% static 'imagens/logo_completa.educaplus.png' %}" alt="logo-educa-plus">
+        <a id="cursos" class="navegador" href="{% url 'cursos'%}">Cursos</a>
+        <a class="navegador" href="{% url 'sobre'%}">Sobre</a>
+        <a class="navegador" href="#">EducaUltra</a>
+        <a class="navegador" href="#">Forum</a>
+        <a id="meu-painel" class="navegador" href="{% url 'painel'%}">Meu painel</a>
+        <a id="header-icon-bell" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+          </svg></a>
+        <a id="header-icon" href="{% url 'sair' %}"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="icon" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg></a>
+          <button id="arrow-bottom" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="a-b" viewBox="0 0 16 16" style="position: relative; left: -6px; top: 2px;">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+        </button>
+    </header>
+    <main>
+        <main>
+            <div>
+            <span id="cursos-2"><p>CURSOS</p></span>
+            <p class="seja">Assine o EducaUltra e remova os anúncios do site, tenha direito a cursos excluvisos e diversos outros benefícios</p>
+            <container id="primeira-fileira">
+                <div title="Curso de Pontuação - Portugues [30 Horas]" class="item-1">
+                <img class="img" src="{% static 'imagens/curso-pontuacao.png'%}" alt=""><p class="name-curso">Pontuação - Portugues <br>[20 Horas]</p><p class="descricao">A pontuação é um dos pilares fundamentais da língua portuguesa e desempenha um papel crucial na clareza e no significado [...].</p><a class="veja-mais" href="">Veja mais</a>
+                </div>
+                <a href="{% url 'video'%}">
+                    <div title="Curso de Matematica Financeira - Matematica [30 Horas]" class="item-1">
+                        <img class="img" src="{% static 'imagens/curso-financa.png'%}" alt=""><p class="name-curso">Matematica Financeira - Matematica [30 Horas]</p><p class="descricao"> A Matemática Financeira é fundamental para a gestão de recursos pessoais e empresariais, permitindo que os alunos compreendam [...].</p><a class="veja-mais" href="">Veja mais</a>
+                    </div>
+                </a>
+                <div title="Curso de Matematica Financeira - Matematica [30 Horas]" class="item-1">
+                    <img class="img" src="{% static 'imagens/curso-redacao.png'%}" alt=""><p class="name-curso">Redação Completa<br> [40 Horas]</p><p class="descricao"> Escrever bem vai além de transmitir ideias; é uma forma de organizar pensamentos, expressar opiniões de forma clara e convencer o leitor com [...].</p><a class="veja-mais" href="">Veja mais</a>
+                </div>
+                <div title="Curso de Cartografia - Geografia [30 Horas]" class="item-1">
+                    <img class="img" src="{% static 'imagens/curso-cartografia2.png'%}" alt=""><p class="name-curso">Cartografia - Geografia<br> [30 Horas]</p><p class="descricao"> 
+                        A cartografia vai além de criar mapas; é uma ciência que organiza informações geográficas e nos ajuda a entender melhor o espaço, facilitando a [...].</p><a class="veja-mais" href="">Veja mais</a>
+                </div>
+
+
+            </container>
+            <container id="segunda-fileira">
+            </container>
+    </main>
+    
+</body>
+</html>

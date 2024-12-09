@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'imagens/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <title>Cursos • EducaPlus</title>
+</head>
+<body>
+    <header>    
+        <img src="{% static 'imagens/logo_completa.educaplus.png' %}" alt="logo-educa-plus">
+        <a class="navegador" href="{% url 'cursos'%}">Cursos</a>
+        <a id="cursos" class="navegador" href="{% url 'sobre'%}">Sobre</a>
+        <a class="navegador" href="#">EducaUltra</a>
+        <a class="navegador" href="#">Forum</a>
+        <a id="meu-painel" class="navegador" href="{% url 'painel'%}">Meu painel</a>
+        <a id="header-icon-bell" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+          </svg></a>
+        <a id="header-icon" href="{% url 'sair'%}"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="icon" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg></a>
+          <button id="arrow-bottom" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="a-b" viewBox="0 0 16 16" style="position: relative; left: -6px; top: 2px;">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+        </button>
+    </header>
+    <main>
+        <main>
+            <div>
+            <span id="cursos-2"><p>SOBRE</p></span>
+            <p class="seja">Assine o EducaUltra e remova os anúncios do site, tenha direito a cursos excluvisos e diversos outros benefícios</p>
+            <span id="geral">
+            </div>
+                <div id="conteudo">
+                    <img src="{% static 'imagens/pluseduca.png'%}" alt="">
+                    <span id="c2">
+                        <span>
+                            <h2>A PLATAFORMA DE ENSINO
+                                PLUS EDUCA</h2>
+                            <p class="p1">O Pluseduca é um projeto em desenvolvimento, idealizado por estudantes de Tecnologia da Informação (TI), que busca criar uma plataforma educacional acessível para ajudar a população brasileira a se preparar para o ENEM, vestibulares e concursos públicos. O objetivo principal da plataforma é fornecer conteúdo educacional de forma gratuita, mas também oferecer recursos adicionais para aqueles que buscam uma experiência mais completa.
+                            <br><br>
+                            Um dos diferenciais do Pluseduca será o Ultraeduca, uma assinatura paga que dará acesso a benefícios extras, como materiais complementares, simulados exclusivos, tutoriais avançados e suporte especializado. Mesmo com essa opção premium, a essência da plataforma permanece no ensino gratuito, tornando o aprendizado acessível para todos, independentemente da sua condição financeira.
+                            </p>
+                        </span>
+                    </span>
+                </div>
+                <div id="conteudo-2">
+                    <p class="p1">Atualmente, o Pluseduca está em fase de planejamento e projeção, com os desenvolvedores trabalhando para garantir uma experiência educacional eficiente e inovadora. A proposta ainda está sendo refinada, mas a equipe está confiante de que será uma solução revolucionária para democratizar o ensino e ajudar os estudantes brasileiros a alcançar seus objetivos educacionais de forma prática e acessível</p>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

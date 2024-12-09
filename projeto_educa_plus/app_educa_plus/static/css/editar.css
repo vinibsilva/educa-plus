@@ -1,0 +1,132 @@
+body {
+    background-color: #101423;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2,label {
+    color: white;
+    font-weight: 400;
+}
+#meu-painel {
+    color: #ffffff;
+    margin: 0px;
+    width: 150px;
+    margin: 20px;    
+}
+
+#header-icon-bell {
+    margin-left: 53%;
+}
+
+#header-icon {
+    margin-left: 10px;
+    width: 60px;
+}
+
+header > a > .icon path {
+    margin-left: 100px;
+    align-items: center;
+}
+header {
+    padding-bottom: 10px;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+header > img {
+    height: 70px;
+}
+
+.navegador {
+    margin: 20px;
+    
+}
+
+header > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon {
+    fill: white;
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+#meu-painel-2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+#edit-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    height: 40px;
+    border: 1px solid #545c75;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #101423;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0068AD;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.sessao{
+    font-size: 10px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+}
+#salvar{
+    width: 5%;
+    background-image: linear-gradient(23deg, #01073D, #060074);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ebeaff;
+    font-weight: 550;
+    padding: 8px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+#cancelar{
+    width: 5%;
+    background-color: #ebeaff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #01073D;
+    font-weight: 550;
+    padding: 8px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
