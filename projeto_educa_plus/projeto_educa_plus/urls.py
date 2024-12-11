@@ -12,5 +12,5 @@ urlpatterns = [
     path("editar/", views.editar, name="editar"),
     path("sobre/", views.sobre, name="sobre"),
     path("cursos/", views.cursos, name="cursos"),
-    path("video/", views.video, name="video")
+    path("video/<int:curso_id>/", views.video, name="video"),
 ]

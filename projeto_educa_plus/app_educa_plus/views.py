@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login, logout
-from .models import Estudante
+from .models import Estudante, Curso
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     return render(request, "usuarios/home.html")
@@ -51,13 +52,14 @@ def registro(request):
     else: 
         return render(request, "usuarios/registro.html")
 
-
+@login_required
 def painel(request):
     usuario = request.user
     estudante = Estudante.objects.filter(user=usuario).first()
 
     return render(request, 'usuarios/meu-painel.html', {'usuario': usuario, 'estudante': estudante})
 
+@login_required
 def editar(request):
     estudante = get_object_or_404(Estudante, user=request.user)
 
@@ -76,15 +78,20 @@ def editar(request):
     else: 
         return render(request, 'usuarios/editar.html')
 
+@login_required
 def sobre(request):
     return render(request, "usuarios/sobre.html")
 
+@login_required
 def cursos(request):
     return render(request, "usuarios/cursos.html")
 
-def video(request):
-    return render(request, "usuarios/video.html")
+@login_required
+def video(request, curso_id):
+    curso = get_object_or_404(Curso, id=curso_id)
+    return render(request, 'usuarios/video.html', {'curso': curso})
 
+@login_required
 def sair(request):
     logout(request)
     return redirect('login')

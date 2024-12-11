@@ -9,3 +9,6 @@ class Estudante(models.Model):
     conquistas = models.IntegerField(blank=True, null=True) 
     tipo_plano = models.CharField(max_length=50, choices=[('EDUCABASIC', 'EDUCAULTRA')])
 
+class Curso(models.Model):
+    videos = models.JSONField() 
+    quantidade_videos = models.IntegerField(null=True)
